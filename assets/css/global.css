@@ -1,20 +1,29 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+  
 }
 
 .body {
-    background-image: url(/assets/img/pokemon1.png);
+    background-size: cover;
     background: fixed;
     background-position: center;
     text-align: center;
+    background-color: #61b1e6;
+    background-image: url('/assets/img/pokemon1.png');
 }
 
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #be6262;
+}
+h1 {
+    color: #105a4b;
+    opacity: .3;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 992px) {

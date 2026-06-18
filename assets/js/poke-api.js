@@ -23,8 +23,8 @@ pokeApi.getPokemonDetail = (pokemon) => {
         .then(convertPokeApiDetailToPokemon)
 }
 
-pokeApi.getPokemons = (offset = 0, limit = 5) => {
-    const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
+pokeApi.getPokemons = (offset = 0, limit = 100000) => {
+    const url = `https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0=${offset}&limit=${limit}`
 
     return fetch(url)
         .then((response) => response.json())
